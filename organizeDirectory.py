@@ -13,10 +13,10 @@ SUBDIRECTORIES = {
     "VIDEOS": ['.mov','.avi','.mp4'],
     "IMAGES": ['.jpg','.jpeg','.png']
 }
-def pickDirectory(value):
+def pickDirectory(name):
     for category, suffixes in SUBDIRECTORIES.items():
         for suffix in suffixes:
-            if suffix == value:
+            if suffix == name:
                 return category
     return 'MISC' #If filetype doesn't exist in our dictionary
 
