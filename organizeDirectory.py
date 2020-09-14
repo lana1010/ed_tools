@@ -1,4 +1,4 @@
-import os
+import os, shutil
 from pathlib import Path
 
 print("Current dir is: ", os. getcwd())
@@ -6,6 +6,8 @@ print("Current dir is: ", os. getcwd())
 os.chdir('C:\\DOC\\OrganizeMe')
 
 print("Now I'm in: ", os. getcwd())
+# backup testing directory
+shutil.copytree('C:\\DOC\\OrganizeMe', 'C:\\DOC\\OrganizeMe_')
 
 SUBDIRECTORIES = {
     "DOCUMENTS": ['.pdf','.rtf','.txt'],
