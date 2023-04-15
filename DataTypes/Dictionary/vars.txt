@@ -1,0 +1,2 @@
+var1="Smart"
+var2="Cookie"
