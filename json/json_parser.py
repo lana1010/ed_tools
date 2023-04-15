@@ -35,5 +35,5 @@ with open('data.json') as data_file:
 pprint(data)
 
 pprint (data["maps"][0]["id"])  # will return 'blabla'
-print data["masks"]["id"]    # will return 'valore'
-print data["om_points"]      # will return 'value'
+print (data["masks"]["id"])   # will return 'valore'
+print (data["om_points"])      # will return 'value'
